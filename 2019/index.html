@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	<meta name="author" content="letswift" />
+	<meta property="og:image" content="http://www.letswift.kr/2019/images/letswift-cover.png"/>
+	<meta property="og:url" content="http://www.letswift.kr/2019/"/>
+	<meta property="og:title" content="다같이 함께 만드는 스위프트 컨퍼런스: Let'Swift">
+	<meta property="og:description" content="WWDC 애플 개발자 컨퍼런스만큼 재밌는 스위프트 컨퍼런스. 11월 12일(화)에 열립니다!"/>
+	<meta name=description content="A Change of Seasons. 스위프트 개발자에게 혹독한 변화의 계절을 함께 준비해요.">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="theme.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+
+	<style type="text/css">
+	a, h4 > span:not(.nocolor) {	color: #FF33B7; }
+	a:hover { color: #FFC9B7; }
+	.before-heading {font-size: 22px;}
+	.emphasis-title { margin:0 0 25px; }
+	#primary-menu > ul > li:hover a, #primary-menu > ul > li.current a {
+    color: #FFC9B7;
+  }
+
+	#primary-menu ul li a {
+		color: #FFFFFF;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.page-section {
+    padding: 80px 0;
+	}
+	.overlay {
+	   background:transparent;
+	   position:relative;
+	   width:100%;
+	   height:450px; /* your iframe height */
+	   top:450px;  /* your iframe height */
+	   margin-top:-450px;  /* your iframe height */
+	}
+	</style>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-79004702-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!-- Document Title
+	============================================= -->
+	<title>Let'Swift : 스위프트 컨퍼런스</title>
+
+</head>
+
+<body class="stretched">
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+ 	</script>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder" style="color:white"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+							<li><a href="#" data-href="#section-ticket"><div>Ticket</div></a></li>
+							<li><a href="#" data-href="#section-speakers"><div>Speakers</div></a></li>
+							<li><a href="#" data-href="#section-program"><div>Program</div></a></li>
+							<li><a href="#" data-href="#section-sponsors"><div>Sponsors</div></a></li>
+							<li><a href="#" data-href="#section-staff"><div>Staff</div></a></li>
+							<li><a href="#" data-href="#section-venue"><div>Venue</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="home" class="clearfix">
+
+			<div class="section swiper_wrapper nopadding nomargin noborder ohidden">
+				<div class="container center one-page-menu">
+					<div class="home-title" data-aos="fade-in" data-aos-duration="1100">
+						<div class="main">
+							<strong>Let`Swift 2019</strong>
+						</div>
+						<div class="sub">
+							<span>12th November @ Seoul, Korea</span>
+						</div>
+					</div>
+
+					<div class="home-logo animated infinite slower pulse" data-aos="zoom-out" data-aos-duration="1500">
+						<img src="images/header2_swift_logo.png">
+					</div>
+
+					<div class="home-submit">
+						<a href="https://festa.io/events/602" target="_blank" class="btn-submit">2020년에 만나요!</a>
+					</div>
+
+					<div class="home-past" data-aos="fade-in" data-aos-duration="1100">
+						<a href="../2016/index.html" target="_blank" class="icon-2016"><strong>2016</strong></a>
+						<a href="../2017/index.html" target="_blank" class="icon-2017"><strong>2017</strong></a>
+						<a href="../2018/index.html" target="_blank" class="icon-2018"><strong>2018</strong></a>
+					</div>
+				</div>
+			</div>
+
+		</section><!-- #home end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="section-about" class="center page-section">
+					<div class="container clearfix">
+						<div class="flex-container">
+							<div class="image animated infinite slower swing" data-aos="fade-up">
+								<img src="images/about_bar_image.png">
+							</div>
+							<div class="text">
+								<div>
+									<h3 data-aos="fade-up">
+										A Change of Season</br>
+										스위프트 개발자에게 혹독한 변화의 계절을 함께 준비해요
+									</h3>
+									<p data-aos="fade-up">
+										오픈소스 기반 스위프트 커뮤니티에는 학생부터 10년 넘은 베테랑 개발자까지 다양합니다. <br/>
+										SwiftUI 와 Combine은 새로운 iOS 개발 경험을 만들어 줄 겁니다. <br/>
+										<br/>
+										🎤 난이도 있는 기술 토픽에 대한 발표 <br/>
+										💻 직접 코드 품질을 개선하는 워크숍  <br/>
+										🍵 작은 주제별로 자유롭게 토론하는 소규모 티타임 <br/>
+										<br/>
+										<b>여러분은 어떤 주제에 관심이 있으신가요?</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="section-ticket" class="page-section">
+					<div class="container clearfix">
+						<h2 class="animated infinite slower shake" data-aos="fade-up">Video</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/y5ZV5zJMeKI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div id="section-speakers" class="page-section">
+					<div class="container clearfix">
+						<h2 class="animated infinite slower shake" data-aos="fade-in">SPEAKERS</h2>
+						<div class="description" data-aos="fade-up">
+								👨‍🏫 : SESSION 👨‍💻 : WORKSHOP 🍵 : TEA TIME
+						</div>
+						<div class="flex-container" data-aos="fade-up">
+							<div class="speaker">
+								<img class="photo animated infinite pulse" src="images/speakers/김정님.jpeg">
+								<div class="name">김정</div>
+								<div class="session-name">코드스쿼드</div>
+								<div class="session-name">👨‍🏫 키노트 + 컨퍼런스를 즐기는 방법</br>👨‍💻 스위프트 프로그래밍 코드 리뷰</div>
+								<div class="description">
+									달콤한 스위프트와 후덕한 오브젝티브-C의 혼혈왕자
+								</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/박보영님.jpeg">
+								<div class="name">박보영</div>
+								<div class="session-name">뱅크샐러드</div>
+								<div class="session-name">👨‍🏫 RxSwift to Combine (feat. SwiftUI)</div>
+								<div class="description">
+									뱅크샐러드 iOS application 개발자입니다.</br>여기저기서 이런저런일 하다가 서른 넘어 프로그래밍 세계에 발을 첫 발을 내딛었습니다.
+								</div>
+								<div class="hashtag">#RxSwift #Combine #iPhonePro갖고십따</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/백성욱님.jpeg">
+								<div class="name">백성욱</div>
+								<div class="session-name">LINE BIZPLUS</div>
+								<div class="session-name">👨‍🏫 Behind Scene of Delightful Experience</div>
+								<div class="description">
+									여행과 커피를 좋아하는 iOS 개발자입니다.
+								</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/강승철님.jpeg">
+								<div class="name">강승철</div>
+								<div class="session-name">야놀자</div>
+								<div class="session-name">👨‍🏫 미려한 UI/UX를 위한 여정</div>
+								<div class="description">
+									야놀자에서 iOS 리딩을 하고 있습니다. OOP와 FP에 심취해 있습니다.
+								</div>
+								<div class="hashtag">#CADisplayLink #animation #순차처리</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/안정민님.jpeg">
+								<div class="name">안정민</div>
+								<div class="session-name">한국카카오은행</div>
+								<div class="session-name">👨‍🏫 MVC, MVVM, ReactorKit, Viper를 거쳐 RIB 정착기</div>
+								<div class="description">
+									소소하게 제과를 취미로 하고 있고, 자그만한 iOS 블로그를 운영하는 은행원입니다.
+								</div>
+								<div class="hashtag">#MVC #MVVM #ReactorKit #VIPER #RIBs</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/김용성님.jpg">
+								<div class="name">김용성</div>
+								<div class="session-name">VCNC</div>
+								<div class="session-name">🍵 스타트업 개발자(주니어의 성장, 서비스, 개발 문화)</div>
+								<div class="description">
+									VCNC 에서 모바일 어플리케이션을 개발하고 있습니다.
+								</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/김건우님.jpeg">
+								<div class="name">김건우</div>
+								<div class="session-name">VCNC</div>
+								<div class="session-name">🍵 스타트업 개발자(주니어의 성장, 서비스, 개발 문화)</div>
+								<div class="description">
+									VCNC에서 타다의 iOS와 안드로이드 개발을 하고 있는 김건우입니다. 사용자의 경험을 깊이 고민하는 데 관심이 많습니다.
+								</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/장왕수님.jpeg">
+								<div class="name">장왕수</div>
+								<div class="session-name">아파트너</div>
+								<div class="session-name">🍵 iOS 프리랜서 생활</div>
+								<div class="description">
+									수다스러운 개발자입니다. 함께 개발 이야기가 하고 싶어요.
+								</div>
+								<div class="hashtag">#Freelance #Swift #Objc</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/최완복님.jpeg">
+								<div class="name">최완복</div>
+								<div class="session-name">LINE Biz Plus</div>
+								<div class="session-name">👨‍💻 실용적인 Swift 함수형 프로그래밍</div>
+								<div class="description">
+									LINE Pay iOS 앱을 개발하고 있습니다. 저지르고 수습하며 살고 있습니다.
+								</div>
+								<div class="hashtag">#Practical #FuntionalProgramming</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/이봉원님.jpg">
+								<div class="name">이봉원</div>
+								<div class="session-name">패스트캠퍼스</div>
+								<div class="session-name">👨‍🏫 Swift in SwiftUI</div>
+								<div class="description">
+									SwiftUI에 반영된 Swift 5.1의 주요 구현사항에 대해 소개합니다.
+								</div>
+								<div class="hashtag">#Swift #SwiftUI</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/김남현님.jpeg">
+								<div class="name">김남현</div>
+								<div class="session-name">VCNC</div>
+								<div class="session-name">👨‍🏫 Xcode Previews - IB없이 개발하기</div>
+								<div class="description">
+									MFC로 개발에 입문하여 VCNC 창업 때부터 비트윈, 타다 클라이언트를 만들면서 수년간 모바일 개발을 담당하고 있습니다. 이를 바탕으로 사용자 UI 프로그래밍을 관통하는 "무언가"를 찾고자 하는 개발자입니다.
+								</div>
+								<div class="hashtag">#XcodePreviews</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/황규영님.jpeg">
+								<div class="name">황규영</div>
+								<div class="session-name">SendBird</div>
+								<div class="session-name">🍵 개발자와의 심리전 - SDK 개발</div>
+								<div class="description">
+									창업과 함께 앱 개발을 시작해서 B2B SDK 개발을 하는 엔지니어
+								</div>
+								<div class="hashtag">#SDK #개발자를_위한_개발자 #심리전 #역지사지</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/이규원님.jpeg">
+								<div class="name">이규원</div>
+								<div class="session-name">카카오페이지</div>
+								<div class="session-name">🍵 주니어 개발자의 성장하는 글쓰기</div>
+								<div class="description">
+									카카오페이지에서 어느덧 3년째 iOS 개발자로 일하고 있습니다. 무엇인가 쓰는 것을 좋아합니다!
+								</div>
+								<div class="hashtag">#주니어 #성장 #개발자글쓰기 #사내블로그 #깃헙 #슬랙 #회사일기</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/이병찬님.jpeg">
+								<div class="name">이병찬</div>
+								<div class="session-name">뱅크샐러드</div>
+								<div class="session-name">👨‍🏫 RxTesting 같이 시작하기</div>
+								<div class="description">
+									안녕하세요 뱅크샐러드 iOS앱을 개발하고 있는 이병찬입니다.</br>Rx와 Test코드에 관심이 많으며 대체될 수 있는 코드를 작성하기 위해 노력하는 개발자 입니다.
+								</div>
+								<div class="hashtag">#Rx #TestCode #뱀장어</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/곽도영님.jpeg">
+								<div class="name">곽도영</div>
+								<div class="session-name">네이버</div>
+								<div class="session-name">👨‍🏫 iOS 앱에서 머신러닝이 해결할 수 있는 문제들</div>
+								<div class="description">
+									재미 붙이면 오래합니다.
+								</div>
+								<div class="hashtag">#Mobile❤️ML #CoreML #TFLite</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/이정우님.png">
+								<div class="name">이정우</div>
+								<div class="session-name">IBM Japan</div>
+								<div class="session-name">👨‍🏫 코드로 iOS UI 편하게 작업하기 위한 라이브러리 작업</div>
+								<div class="hashtag">#NoStoryboard</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/권문범님.jpeg">
+								<div class="name">권문범</div>
+								<div class="session-name">네이버</div>
+								<div class="session-name">🍵 여러 회사 개발 문화와 커뮤니케이션</div>
+								<div class="description">
+									유엔젤 - 위메프를 거쳐 네이버까지 교육/커머스/메신저/검색 등 다양한 앱 개발 경험을 가진 iOS 개발자
+								</div>
+								<div class="hashtag">#iOS #Developer #Networking #Study #Career</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/김윤봉님.jpg">
+								<div class="name">김윤봉</div>
+								<div class="session-name">Kasa Korea</div>
+								<div class="session-name">🍵 여러 회사 개발 문화와 커뮤니케이션</div>
+								<div class="description">
+									두 딸의 아빠이자 iOS 앱 개발자로 살고 있는 y8k 닉네임을 사용하는 김윤봉입니다.
+								</div>
+								<div class="hashtag">#iOS #Developer #Networking #Study #Career</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/우경재님.png">
+								<div class="name">우경재</div>
+								<div class="session-name">쏘카</div>
+								<div class="session-name">🍵 쏘카의 개발 문화</div>
+								<div class="description">
+									쏘카에서 모바일 클라이언트 팀을 꾸리고 있습니다. iOS 개발도 계속 합니다.
+								</div>
+								<div class="hashtag">#개발문화</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/조성현님.jpeg">
+								<div class="name">조성현</div>
+								<div class="session-name">민족사관고등학교</div>
+								<div class="session-name">🍵 공짜로 WWDC 가는법(스칼라십)</div>
+								<div class="description">
+									저도 인턴 좀 하고 싶어요
+								</div>
+								<div class="hashtag">#wwdcscholars</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/이재성님.jpeg">
+								<div class="name">이재성</div>
+								<div class="session-name">SendBird</div>
+								<div class="session-name">🍵 공짜로 WWDC 가는법(스칼라십)</div>
+								<div class="description">
+									안녕하세요. 이재성입니다.
+								</div>
+								<div class="hashtag">#wwdcscholars</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/김민혁님.jpg">
+								<div class="name">김민혁</div>
+								<div class="session-name">SendBird</div>
+								<div class="session-name">🍵 공짜로 WWDC 가는법(스칼라십)</div>
+								<div class="description">
+									고딩이코딩
+								</div>
+								<div class="hashtag">#wwdcscholars</div>
+							</div>
+							<div class="speaker" data-aos="fade-up">
+								<img class="photo animated infinite pulse" src="images/speakers/김우성님.jpeg">
+								<div class="name">김우성</div>
+								<div class="session-name">StyleShare Inc.</div>
+								<div class="session-name">🍵 스타일쉐어 iOS팀 개발 문화</div>
+								<div class="description">
+									‘제품을 깎는 장인’을 목표로 합니다. 팀과 회사가 계속 더 잘 되는 것에 관심이 많습니다.
+								</div>
+								<div class="hashtag">#팀문화 #협업</div>
+							</div>
+					</div>
+				</div>
+
+				<div id="section-program" class="page-section">
+					<div class="container clearfix">
+						<h2 class="animated infinite slower shake">PROGRAM</h2>
+
+						<table class="program-table" data-aos="fade-up">
+							<thead>
+								<tr>
+									<th></th>
+									<th  colspan="4" class="header">SESSION</th>
+								</tr>
+								<tr>
+									<th></th>
+									<th  colspan="4" class="header-subscription">난이도 있는 기술 토픽에 대한 발표 👨‍🏫</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="time"><span>09:00</span></td>
+									<td colspan="4" class="register">입장 및 등록</td>
+								</tr>
+								<tr>
+									<td class="time"><span>09:30</span></td>
+									<td colspan="4" rowspan="2" class="program keynote">
+										<span class="time">09:30 - 09:50</span>
+										<span class="keynote">키노트 + 컨퍼런스를 즐기는 방법 <span class="level">중</span></span>
+										<span class="speaker">김정</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/godrm/letswift-2019">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/vjy8EdrfBIw">동영상</a></span>
+										
+									</td>
+								</tr>
+								<tr><!--09:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--09:50-->
+									<td class="time"></td>
+									<td colspan="4" class="program"></td>
+								</tr>
+								<tr>
+									<td class="time"><span>10:00</span></td>
+									<td colspan="4" rowspan="4" class="program">
+										<span class="time">10:00 - 10:40</span>
+										<span class="title">RxSwift to Combine (feat. SwiftUI) <span class="level">중</span></span>
+										<span class="speaker">박보영</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/BoYoungPark11/rxswift-to-combine-195031142">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/Y273NDkYBg4">동영상</a><br/>
+										<a href="https://github.com/fimuxd/BringMyOwnBeer-">RxSwift+RxCocoa 예제</a>&nbsp;|&nbsp;<a href="https://github.com/fimuxd/BringMyOwnBeer-Combine">Combine+SwiftUI 예제</a></span>
+									</td>
+								</tr>
+								<tr><!--10:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--10:40-->
+									<td class="time"></td>
+									<td  colspan="4"class="program"></td>
+								</tr>
+								<tr><!--10:50-->
+									<td class="time"></td>
+									<td colspan="4" rowspan="2" class="program">
+										<span class="time">10:50 - 11:10</span>
+										<span class="title">Behind Scene of Delightful Experience <span class="level">중</span></span>
+										<span class="speaker">백성욱</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/ssuserfc47fa/behind-scene-of-delightful-experience-letswift-2019">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/okWX5Ub-lUc">동영상</a></span>
+									</td>
+								</tr>
+								<tr><!--11:00-->
+									<td class="time"><span>11:00</span></td>
+								</tr>
+								<tr><!--11:10-->
+									<td class="time"></td>
+									<td colspan="4" class="program"></td>
+								</tr>
+								<tr><!--11:20-->
+									<td class="time"></td>
+									<td colspan="4" rowspan="4" class="program">
+										<span class="time">11:20 - 12:00</span>
+										<span class="title">미려한 UI/UX를 위한 여정 <span class="level">고</span></span>
+										<span class="speaker">강승철</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/seungchulkang39/uiux-193451561">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/u6bIQWy0KwU">동영상</a><br/>
+											<a href="https://github.com/dotNetTree/letswift2019">예제코드</a></span>
+										</td>
+								</tr>
+								<tr><!--11:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--11:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--12:00-->
+									<td class="time"><span>12:00</span></td>
+									<td colspan="4" rowspan="2" class="register">👨‍🍳점심시간👩‍🍳</td>
+								</tr>
+								<tr><!--13:10-->
+									<td class="time"></td>
+								</tr>
+								</tbody>
+
+								<thead>
+									<tr>
+										<th></th>
+										<th class="header">SESSION</th>
+										<th colspan="2" class="header">TEA TIME</th>
+										<th class="header">WORKSHOP</th>
+									</tr>
+									<tr>
+										<th></th>
+										<th class="header-subscription">난이도 있는 기술 토픽에 대한 발표 👨‍🏫</th>
+										<th colspan="2" class="header-subscription">다양한 개발자들과 경험의 토론과 질의응답</br>🍵는 없어도 여유로운 대화를 즐길 수 있는 시간</th>
+										<th class="header-subscription">코드 품질을 높일 수 있는</br>실습 위주의 워크숍 👨‍💻</th>
+									</tr>
+								</thead>
+								<tbody>								<tr><!--13:00-->
+									<td class="time"><span>13:00</span></td>
+									<td rowspan="4" class="program">
+										<span class="time">13:00 - 13:40</span>
+										<span class="title">MVC, MVVM, ReactorKit, Viper를 거쳐 RIB 정착기 <span class="level">중</span></span>
+										<span class="speaker">안정민</span>
+										<span class="emphasis-title"><a href="https://speakerdeck.com/minsone/mvc-mvvm-reactorkit-viperreul-geocyeo-rib-jeongcaggi">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/3XS6xLzKRjc">동영상</a></span>
+									</td>
+									<td rowspan="5" class="program">
+										<span class="time">13:00 - 13:50</span>
+										<span class="title">🍵 스타트업 개발자(주니어의 성장, 서비스, 개발 문화) <span class="level">초</span></span>
+										<span class="speaker">김용성, 김건우</span>
+									</td>
+									<td rowspan="5" class="program">
+										<span class="time">13:00 - 13:50</span>
+										<span class="title">🍵 iOS 프리랜서 생활 <span class="level">초</span></span>
+										<span class="speaker">장왕수</span>
+									</td>
+									<td rowspan="11" class="program">
+										<span class="time">13:00 - 14:50</span>
+										<span class="title">👨‍💻 실용적인 Swift 함수형 프로그래밍 <span class="level">중</span></span>
+										<span class="speaker">최완복</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/imyostarr/letswift-2019-193026704">발표자료</a></span>
+									</td>
+								</tr>
+								<tr><!--13:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--13:40-->
+									<td class="time"></td>
+									<td class="program"></td>
+								</tr>
+								<tr><!--13:50-->
+									<td class="time"></td>
+									<td rowspan="2" class="program">
+										<span class="time">13:50 - 14:10</span>
+										<span class="title">Swift in SwiftUI <span class="level">중</span></span>
+										<span class="speaker">이봉원</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/itpersons/swift-in-swiftui">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/Gr-rwKqIaeE">동영상</a></span>
+									</td>
+								</tr>
+								<tr><!--14:00-->
+									<td class="time"><span>14:00</span></td>
+									<td rowspan="5" class="program">
+										<span class="time">14:00 - 14:50</span>
+										<span class="title">🍵 개발자와의 심리전 - SDK 개발 <span class="level">중</span></span>
+										<span class="speaker">황규영</span>
+									</td>
+									<td rowspan="5" class="program">
+										<span class="time">14:00 - 14:50</span>
+										<span class="title">🍵 주니어 개발자의 성장하는 글쓰기 <span class="level">초</span></span>
+										<span class="speaker">이규원</span>
+										<span class="emphasis-title"><a href="https://github.com/Kyoo32/letSwift2019_growingWriting">참고자료</a></span>
+									</td>
+								</tr>
+								<tr><!--14:10-->
+									<td class="time"></td>
+									<td class="program"></td>
+								</tr>
+								<tr><!--14:20-->
+									<td class="time"></td>
+									<td rowspan="4" class="program">
+										<span class="time">14:20 - 15:00</span>
+										<span class="title">Xcode Previews - IB 없이 개발하기 <span class="level">중</span></span>
+										<span class="speaker">김남현</span>
+										<span class="emphasis-title"><a href="https://speakerdeck.com/vcnc/xcode-previews-ibeobsi-gaebalhagi">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/eGerQUlXeyg">동영상</a></span>
+									</td>
+								</tr>
+								<tr><!--14:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--14:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:00-->
+									<td class="time"><span>15:00</span></td>
+									<td class="program"></td>
+									<td rowspan="5" class="program">
+										<span class="time">15:00 - 15:50</span>
+										<span class="title">🍵 여러 회사 개발 문화와 커뮤니케이션 <span class="level">초</span></span>
+										<span class="speaker">권문범, 김윤봉</span>
+									</td>
+									<td rowspan="5" class="program">
+										<span class="time">15:00 - 15:50</span>
+										<span class="title">🍵 쏘카의 개발 문화 <span class="level">초</span></span>
+										<span class="speaker">우경재</span>
+									</td>
+									<td rowspan="11" class="program">
+										<span class="time">15:00 - 16:50</span>
+										<span class="title">👨‍💻 스위프트 클린코드 + 클린아키텍처 <span class="level">중</span></span>
+										<span class="speaker">김정</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/godrm/letswift19cleanarchitecture">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/KUEe1tc2CbE">화면영상</a></span>
+									</td>
+								</tr>
+								<tr><!--15:10-->
+									<td class="time"></td>
+									<td rowspan="2" class="program">
+										<span class="time">15:10 - 15:30</span>
+										<span class="title">RxTesting 같이 시작하기 <span class="level">고</span></span>
+										<span class="speaker">이병찬</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/ssuser750dc6/rxswift-testing-feat-rxblocking-rxtest-192641266">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/tVWKUMxyqVo">동영상</a></span>
+									</td>
+								</tr>
+								<tr><!--15:20-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--15:30-->
+									<td class="time"></td>
+									<td class="program"></td>
+								</tr>
+								<tr><!--15:40-->
+									<td class="time"></td>
+									<td rowspan="4" class="program">
+										<span class="time">15:40 - 16:20</span>
+										<span class="title">iOS 앱에서 머신러닝이 해결할 수 있는 문제들 <span class="level">중</span></span>
+										<span class="speaker">곽도영</span>
+										<span class="emphasis-title"><a href="https://www.slideshare.net/DoyoungGwak/lets-swift-2019-ios">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/zKPB8rnS-EM">동영상</a></span>
+									</td>
+								</tr>
+								<tr><!--15:50-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:00-->
+									<td class="time"><span>16:00</span></td>
+									<td rowspan="5" class="program">
+										<span class="time">16:00 - 16:50</span>
+										<span class="title">🍵 공짜로 WWDC 가는법(스칼라십) <span class="level">초</span></span>
+										<span class="speaker">조성현, 이재성, 김민혁</span>
+									</td>
+									<td rowspan="11" class="program">
+										<span class="time">16:00 - 16:50</span>
+										<span class="title">🍵 스타일쉐어 iOS팀 개발 문화 <span class="level">초</span></span>
+										<span class="speaker">김동현, 김우성, 윤중현, 오강훈, 전수열</span>
+									</td>
+								</tr>
+								<tr><!--16:10-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:20-->
+									<td class="time"></td>
+									<td rowspan="2" class="program">
+										<span class="time">16:20 - 16:40</span>
+										<span class="title">코드로 iOS UI 편하게 작업하기 위한 라이브러리 작업 <span class="level">중</span></span>
+										<span class="speaker">이정우</span>
+										<span class="emphasis-title"><a href="http://letswift.kr/2019/resources/Session10_JungwooLEE.pdf">발표자료</a>&nbsp;/&nbsp;<a href="https://youtu.be/EzjyuEf61Vo">동영상</a><br/>
+										<a href="https://github.com/doil6317/SuperEasyLayout">예제코드</a></span>
+									</td>
+								</tr>
+								<tr><!--16:30-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:40-->
+									<td class="time"></td>
+								</tr>
+								<tr><!--16:50-->
+									<td class="time"></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="description" data-aos="fade-up">
+								* <span class="level">고</span> <span class="level">중</span> <span class="level">초</span> 는 난이도의 표시입니다.<br/>
+								* SESSION 동영상과 WORKSHOP은 화면 녹화 영상 중에 일부 마이크 문제로 녹화가 제대로 되지 않았습니다 🥵<br/>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-sponsors" class="page-section">
+					<div class="container clearfix">
+						<h2 class="animated infinite slower shake" data-aos="fade-up">SPONSORS</h2>
+						<div class="flex-container">
+							<div class="sponsor" data-aos="fade-up">
+								<div class="title">주최</div>
+								<div class="image">
+									<a href="http://www.osxdev.org/"><img src="images/sponsors/osxdev.jpg" alt="OSXdev" height="60px"></a>
+								</div>
+							</div>
+							<div class="sponsor" data-aos="fade-up">
+								<div class="title">주관</div>
+								<div class="image">
+									<a href="http://codesquad.kr/"><img src="images/sponsors/codesquad.png" alt="Codesquad" height="60px"></a>
+								</div>
+							</div>
+							<div class="sponsor" data-aos="fade-up">
+								<div class="title" padding-bottom="30px">골드 후원</div>
+								<div class="col-sm-3">
+									<a href="https://linepluscorp.com"><img src="images/sponsors/line.png" alt="LINE" height="60px"></a>
+								</div>
+								<div class="col-sm-3">
+									<a href="https://heydealer.com"><img src="images/sponsors/heydealer.jpg" alt="LINE" height="70px"></a>
+								</div>
+							</div>
+							<div class="sponsor" data-aos="fade-up">
+								<div class="title" padding-bottom="40px">실버 후원</div>
+								<div class="col-sm-3 bottommargin">
+									<a href="https://tadatada.com"><img src="images/sponsors/vcnc.png" alt="vcnc" height="40px"></a>
+								</div>
+								<div class="col-sm-3 bottommargin">
+									<a href="https://www.gangnamsister.com"><img src="images/sponsors/healpaper.jpg" alt="healpaper" width="50%"></a>
+								</div>
+								<div class="col-sm-3 bottommargin">
+									<a href="https://www.kakaocorp.com"><img src="images/sponsors/Kakao.jpg" alt="kakao" width="50%"></a>
+								</div>
+							</div>
+							</div>
+					</div>
+				</div>
+
+				<div id="section-staff" class="page-section" data-aos="fade-in">
+					<div class="container clearfix">
+						<h2 class="animated infinite slower shake">STAFF</h2>
+						<div class="flex-container">
+							<div class="staff">
+								<img class="avatar" src="images/staff/김정.jpeg">
+								<div class="name">김정</div>
+								<div class="company">코드스쿼드</div>
+								<div class="description">달콤한 스위프트와 후덕한 오브젝티브-C의 혼혈왕자</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/김은영.jpeg">
+								<div class="name">김은영</div>
+								<div class="company">GMO Pepabo, Inc.</div>
+								<div class="hashtag">#디자인담당 #웹개발</div>
+								<div class="description">일본에서 일하고 있어요 !</br>본업은 iOS 개발이지요 🐣 @unnnyong</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/구범모.JPG">
+								<div class="name">구범모</div>
+								<div class="company">고려대학교</div>
+								<div class="hashtag">#앱개발 #카메라맨</div>
+								<div class="description">사진 찍는 iOS 개발자입니다 🤗</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/김나용.jpeg">
+								<div class="name">김나용</div>
+								<div class="company">한양대학교</div>
+								<div class="hashtag">#앱개발</div>
+								<div class="description">🥚🐣🐥</br>성장 중인 개발자, 김나용 입니다.</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/김형중.JPG">
+								<div class="name">김형중</div>
+								<div class="company">NAVER</div>
+								<div class="hashtag">#앱개발</div>
+								<div class="description">안녕하세요, 김형중입니다.</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/손창우.jpeg">
+								<div class="name">손창우</div>
+								<div class="company">한국카카오은행</div>
+								<div class="hashtag">#앱개발</div>
+								<div class="description">MDD (Money Driven Development)</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/강준영.jpeg">
+								<div class="name">강준영</div>
+								<div class="company">(주)엘오이코리아</div>
+								<div class="description">💻 Backend Developer</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/구민회.png">
+								<div class="name">구민회</div>
+								<div class="company">텐핑거스</div>
+								<div class="description">텐핑거스에서 Datepop iOS App을 개발하고 있습니다. 반가와요 ^^</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/구본성.JPG">
+								<div class="name">구본성</div>
+								<div class="company">PJ FACTORY</div>
+								<div class="description">노력하는 개발자에서, 잘하는 개발자로 인생 디버깅중</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/권재욱.JPG">
+								<div class="name">권재욱</div>
+								<div class="company">퍼즐벤처스</div>
+								<div class="description">먹는 거 좋아하는 개발자</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/김근영.jpg">
+								<div class="name">김근영</div>
+								<div class="company">KxCoding</div>
+								<div class="description">강의하면서 앱 만드는 개발자입니다 :)</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/김주희.jpeg">
+								<div class="name">김주희</div>
+								<div class="company">네이버</div>
+								<div class="description">인싸를 꿈꾸는 아싸 개발자입니다. 친한 척 해주시면 감사합니다 ;)</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/노수진.jpeg">
+								<div class="name">노수진</div>
+								<div class="company">네이버웹툰</div>
+								<div class="description">누구나 올 수 있고 모두가 즐거운 컨퍼런스가 됐으면 좋겠습니다!</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/문영선.jpeg">
+								<div class="name">문영선</div>
+								<div class="company">쏘카</div>
+								<div class="description">호기심 많고 즐거움을 공유하고픈 iOS 개발자 입니다.</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/손지민.jpeg">
+								<div class="name">손지민</div>
+								<div class="company">선린인터넷고등학교</div>
+								<div class="description">세상을 변화시키고 싶은 고등학생입니다!</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/오영택.JPG">
+								<div class="name">오영택</div>
+								<div class="company">(주)힐링페이퍼</div>
+								<div class="description">오늘만 사는 개발자. 강남언니 iOS앱을 개발하고 있어요.</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/이동영.jpeg">
+								<div class="name">이동영</div>
+								<div class="description">사과는 맛있어  </div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/이동진.jpeg">
+								<div class="name">이동진</div>
+								<div class="company">NBT</div>
+								<div class="description">재미있게 함께 같이해요! 많이 알려주세요</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/이재은.JPG">
+								<div class="name">이재은</div>
+								<div class="description">☁️구름 좋아하는 개발자, Pilvi입니다.</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/이태현.png">
+								<div class="name">이태현(Jake)</div>
+								<div class="company">야놀자</div>
+								<div class="description">호기심 많은 개발자이자 유투브 꿈나무 제이크 입니다 :)</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/조민지.JPG">
+								<div class="name">조민지</div>
+								<div class="description">😎😎😎</div>
+							</div>
+							<div class="staff">
+								<img class="avatar" src="images/staff/이동건.JPG">
+								<div class="name">이동건</div>
+								<div class="description">즐거운 행사가 되었으면 좋겠습니다. </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-venue" class="page-section">
+					<div class="container clearfix">
+						<h2 class="animated infinite slower shake" data-aos="fade-in">VENUE</h2>
+						<div class="venue-flex-containe" data-aos="fade-up">
+							<iframe class="map" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJPyOi2CyhfDUR0xfDGZMmWZ8&key=AIzaSyBQUkgKTE9szTatO0rnk9zqKGonUztsexg" rameborder="0" allowfullscreen></iframe>
+							<div class="info">
+								<h3>양재 aT 센터 3층</h3>
+								<ul>
+									<li>
+										<strong class="key">일시</strong>
+										<span class="value">11월 12일 (화) 오전 9시부터 오후 5시까지</span>
+									</li>
+									<li>
+										<strong class="key">주소</strong>
+										<span class="value">서울특별시 강남구 강남대로 27</span>
+									</li>
+									<li>
+										<strong class="key">지하철</strong>
+										<span class="value">신분당선 “양재시민의 숲”역에서 하차 후 4번 출구</span>
+									</li>
+									<li>
+										<strong class="key">버스</strong>
+										<span class="value">at 센터 주변 버스정류장 하차</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<div id="section-staff" class="page-section">
+			<div class="container clearfix">
+				<h2 class="animated infinite slower shake" data-aos="fade-up">APP</h2>
+				<div class="flex-container">
+					<div class="sponsor" data-aos="fade-up">
+						<div class="image">
+							<img src="images/app/LetSwift_iPhone_Dark_1.png" alt="Mock1" height="300px">
+							<img src="images/app/LetSwift_iPhone_Dark_2.png" alt="Mock2" height="300px">
+							<img src="images/app/LetSwift_iPhone_Dark_3.png" alt="Mock3" height="300px">
+							<img src="images/app/LetSwift_iPhone_Dark_4.png" alt="Mock4" height="300px">
+							<a class="link-btn" href="https://apps.apple.com/kr/app/lets-conference/id1282995254?l=ko&ls=1" target="_blank"><img src="images/app/Download_on_the_App_Store_Badge_KR_RGB_blk_100317.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="noborder">
+			<div class="container">
+				<ul class="copyright">
+					<li>© 2016-2019 <a class="link-btn" href="http://letswift.kr" target="_blank">Let'Swift</a></li>
+				</ul>
+
+				<ul class="credit">
+					<li>🎨 Designed by <a class="link-btn" href="https://github.com/unnnyong" target="_blank">Eunyoung Kim</a></li>
+					<li></li>
+				</ul>
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
